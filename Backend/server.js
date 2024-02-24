@@ -3,7 +3,10 @@ const express = require("express");
 // express app
 const app = express();
 
-app.listen();
+// routes
+app.get("/", (req, res) => {
+  res.json({ msg: "hello world" });
+});
 
 // listening to port
 app.listen(4000, () => {
